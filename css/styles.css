@@ -1,0 +1,203 @@
+/*
+      --- COLORS ---
+
+      BLACK TONES
+      #353535
+      #282828
+      #1C1C1C
+      #111010
+      #070707
+
+      GOLDEN TONES
+      #E8D970
+      #D8BA3A
+      #B79F27
+      #937618
+      #775B0E
+
+*/
+
+body {
+  font-family: "Kreon", serif;
+  background-color: #070707;
+}
+
+h1 {
+  color: #E8D970;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+p {
+  color: #fff;
+  font-weight: 400;
+}
+
+span {
+  color: #D8BA3A;
+}
+
+/* .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100vh;
+  min-height: 100vh;
+} */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.wings {
+  width: 145px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1C1C1C;
+  border-radius: 69px 0 0 69px;
+  padding: 10px 30px 30px 30px;
+}
+
+.logo {
+  width: 270px;
+  margin: 25px 25px 0 25px;
+}
+
+.laurel {
+  width: 150px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.slot-container {
+  background-color: #111010;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 50px;
+}
+
+.slot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 8px 0 8px;
+}
+
+.decor-slot {
+  width: 140px;
+}
+
+.slot-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070707;
+  border: solid 2px #E8D970;
+  border-radius: 50px;
+  width: 170px;
+  height: 170px;
+  margin: 8px 0 8px 0;
+}
+
+.slot-small {
+  width: 120px;
+}
+
+.slot-ddown {
+  width: 250px;
+  margin-top: 20px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111010;
+  border-radius: 69px;
+  padding: 30px;
+}
+
+.divider {
+  width: 200px;
+}
+
+/* button --------------------------------------------------*/
+#rollbutton {
+  width: 150px;
+  height: 40px;
+  border-color: #E8D970;
+  border-style: solid;
+  border-radius: 25px;
+  background-color: transparent;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+#rollbutton:hover {
+  background-color: #B79F27;
+  cursor: pointer;
+  border-color: transparent;
+
+  color: #000;
+}
+/* button --------------------------------------------------*/
+
+.roll-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 85px;
+  background-color: #070707;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.default-prize-text {
+  text-align: center;
+  opacity: 40%;
+  font-weight: 700;
+  color: #353535;
+}
+
+.normal-prize-text {
+  opacity: 100%;
+  font-weight: 700;
+  color: green;
+}
+
+.small {
+  width: 50px;
+  margin-right: 7px;
+}
+
+.prize {
+  display: flex;
+}
+
+.greenie, a {
+  color: #90EE90;
+}
