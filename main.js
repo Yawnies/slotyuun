@@ -8,6 +8,7 @@ document.querySelector("#rollbutton").addEventListener("click", main);
 
 function main() {
   document.querySelector(".default-prize-text").classList.remove("normal-prize-text");
+  document.querySelector(".roll-results").classList.remove("green-border");
   document.querySelector(".default-prize-text").innerHTML = "prize box.";
   disableButton();
   document.querySelector("#rollbutton").innerHTML = "pulling..."
@@ -66,22 +67,27 @@ function prizeBoxSwitch() {
     case "000":
     document.querySelector(".default-prize-text").innerHTML = `You won a secret link!<br><span class='greenie'><a href='${secretArray[randomResult]}' target='_blank'>Link</a></span>`;
     document.querySelector(".default-prize-text").classList.add("normal-prize-text");
+    document.querySelector(".roll-results").classList.add("green-border");
       break;
     case "111":
     document.querySelector(".default-prize-text").innerHTML = `You won $1000 in real money!<br><span class='greenie'><a href='https://www.youtube.com/watch?v=LsCHjlYw2oM' target='_blank'>*crickets*</a></span>`;
     document.querySelector(".default-prize-text").classList.add("normal-prize-text");
+    document.querySelector(".roll-results").classList.add("green-border");
       break;
     case "222":
     document.querySelector(".default-prize-text").innerHTML = `You won an asian cosplay!<br><span class='greenie'><a href='${asianArray[randomResult]}' target='_blank'>Link</a></span>`;
     document.querySelector(".default-prize-text").classList.add("normal-prize-text");
+    document.querySelector(".roll-results").classList.add("green-border");
       break;
     case "333":
     document.querySelector(".default-prize-text").innerHTML = `You won a game link!<br><span class='greenie'><a href='${gameArray[randomResult]}' target='_blank'>Link</a></span>`;
     document.querySelector(".default-prize-text").classList.add("normal-prize-text");
+    document.querySelector(".roll-results").classList.add("green-border");
       break;
     case "444":
     document.querySelector(".default-prize-text").innerHTML = `You won a playlist link!<br><span class='greenie'><a href='${playlistArray[randomResult]}' target='_blank'>Link</a></span>`;
     document.querySelector(".default-prize-text").classList.add("normal-prize-text");
+    document.querySelector(".roll-results").classList.add("green-border");
       break;
     default:
     document.querySelector(".default-prize-text").innerHTML = "no prize won. try again!";
