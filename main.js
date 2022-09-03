@@ -10,6 +10,7 @@ function main() {
   document.querySelector(".default-prize-text").classList.remove("normal-prize-text");
   document.querySelector(".default-prize-text").innerHTML = "prize box.";
   disableButton();
+  document.querySelector("#rollbutton").innerHTML = "pulling..."
   const intervalId = setInterval(playAnimation, 35);
   setTimeout(randomNumbers, 2000);
   setTimeout(displayFinalResult, 2000);
@@ -33,6 +34,7 @@ function displayFinalResult() {
   randomArray = [];
   enableButton();
   prizeBoxSwitch();
+  document.querySelector("#rollbutton").innerHTML = "pull."
 }
 
 function playAnimation() {
